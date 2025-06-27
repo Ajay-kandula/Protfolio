@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Nabvar from "./Component/Navbar";
+import About from "./Component/About";
+import Contact from "./Component/Contact";
+import Project from "./Component/Project";
+import Education from "./Component/Education";
+import Experience from "./Component/Profesional Experience";
+import Drives from "./Component/What Drives Me";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App(){
+ return(
+   <div style={{justifyContent:'space-between',alignItems:'center',border:'1px solid #ccc',borderRadius:"10px",padding:'20px',margin:'2px'}}>
+    <Nabvar/>
+    <About/>
+    <Education/>
+    <Drives/>
+    <Project/>
+    
+    <Experience/>
+    <Contact/>
+  </div>
+ )
 }
-
 export default App;
