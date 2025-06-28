@@ -7,25 +7,47 @@ function Contact() {
 
     const handleChange = (e) => {
         setForm({ ...form, [e.target.name]: e.target.value });
-
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         if (!form.name) {
             alert('Please enter your name');
-        } else if (!form.email) {
+            return;
+        }
+        if (!form.email) {
             alert('Please enter your email');
-        } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) {
+            return;
+        }
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) {
             alert('Please enter a valid email');
-        } else if (!form.message) {
+            return;
+        }
+        if (!form.message) {
             alert('Please type your message');
-        } else {
-            alert(`Thank You, ${form.name}! Your message has been sent.`);
-            setForm({ name: '', email: '', message: '' });
+            return;
+        }
+
+
+        try {
+            const res = await fetch("http://localhost:5000/send", {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(form)
+            });
+
+            const data = await res.json();
+            if (data.success) {
+                alert(`✅ Thank you, ${form.name}! Your message has been saved to MySQL.`);
+                setForm({ name: '', email: '', message: '' });
+            } else {
+                alert('❌ Error: ' + data.error);
+            }
+        } catch (err) {
+            alert("❌ Network or server error. Please try again.");
+            console.error(err);
         }
     };
-
     return (
         <div style={{
             border: "1px solid #ccc",

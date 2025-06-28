@@ -20,22 +20,25 @@ function Nabvar(){
                 alignItems: "center",
                 border: "1px solid #ccc",
                 borderRadius: "10px",
-                padding: "80px",
-                margin: "20px",
+                padding: "40px",
+                margin: "10px",
                 backgroundColor:"#002e63",color:'white',marginRight:"5px"
             }}
         >
             
             <div style={{marginLeft:'10px'}}>
-                <h1 style={{fontSize:"60px",marginLeft:"5px",marginTop:'10px',fontFamily:'Merriweather'}}>Hi, I'm Kandula Ajay</h1>
-                <p style={{fontFamily:"serif",fontSize:"30px", fontStyle:"italic"}}>I'm a  Web Developer with 2 years of experience using React.js, Node.js, HTML, CSS, and JavaScript. Reach out if you you'd like to learn more!</p>  
-                <a href="#contact" ><button style={{color:"black",backgroundColor:'white',border:'none',borderRadius:"8px",width:'200px',padding:'10px',textDecoration:'none',marginRight:'30px',fontWeight:'bold',fontFamily:'serif',fontStyle:'oblique',fontSize:"25px"}}>Contact Me</button></a>
+                <h1 style={{fontSize:"60px",marginLeft:"5px",marginTop:'10px',fontFamily:'Merriweather',color:"white"}}>Hi, I'm Kandula Ajay</h1>
+                <p style={{justifyContent:'space-between', fontFamily:'initial',fontSize:"25px"}}>I'm a  Web Developer with 2 years of experience using React.js, Node.js, HTML, CSS, and JavaScript. Reach out if you you'd like to learn more!</p>  
+                <a href="#contact" ><button style={{color:"white",backgroundColor:'#b31b1b',border:'none',borderRadius:"8px",width:'200px',padding:'10px',textDecoration:'none',marginRight:'30px',fontWeight:'bold',fontFamily:'serif',fontStyle:'oblique',fontSize:"25px"}}>Contact Me</button></a>
             </div>
 
             <img
                 src={AjayImage}
                 alt="Ajay Kandula"
-                style={{ width: "350px", height: "350px", borderRadius: "50%" ,marginRight:"5px"}}
+                style={{ width: "350px", height: "350px", borderRadius: "50%" ,marginRight:"5px", 
+                    objectFit: 'cover',
+                    boxShadow: '0 10px 20px rgb(235, 255, 16)',
+                    transition: 'transform 0.3s ease-in-out'}}
             />
                 </div>
             </nav>

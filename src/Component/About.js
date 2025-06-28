@@ -25,7 +25,13 @@ function About() {
                     alt="Ajayk"
                     height={350}
                     width={350}
-                    style={{ borderRadius: '50%' }}
+                    style={{width: '350px',
+                        height: '350px',
+                        borderRadius: '50%',
+                        objectFit: 'cover',
+                        boxShadow: '0 10px 20px rgba(255, 16, 16, 0.73)',
+                        transition: 'transform 0.3s ease-in-out'}}
+                
                 />
             </div>
 
