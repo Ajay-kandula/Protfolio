@@ -65,7 +65,7 @@ function Contact() {
                 }}>
                     Open to Opportunities
                 </h1>
-                <p style={{ textAlign: 'center', color: "white" }}>
+                <p style={{ color: "white" }}>
                     I am actively looking for new opportunities where I can leverage my React.js, JavaScript, TypeScript, HTML/CSS, Node.js, and MySQL skills. With hands-on experience in building full-stack web applications, I’m confident in my ability to contribute to both frontend and backend development. If you think I can be helpful to you or your team, feel free to reach out!
                 </p>
 
@@ -81,14 +81,14 @@ function Contact() {
     boxSizing: 'border-box',
     maxWidth: '100%',
     overflowX: 'hidden'
-}}>s
+}}>
                     <div style={{
                         flex: "1",
                         minWidth: '250px',
                         border: "1px solid #ccc",
                         borderRadius: "10px",
                         padding: "20px",
-                        textAlign: 'left',
+                        textAlign: 'centre',
                         backgroundColor: "white",
                         fontSize: '16px'
                     }}>
@@ -106,7 +106,7 @@ function Contact() {
                         border: "1px solid #ccc",
                         borderRadius: "10px",
                         padding: "20px",
-                        textAlign: 'left',
+                        textAlign: "center",
                         backgroundColor: "white"
                     }}>
                         <label>Name:</label><br />
