@@ -4,10 +4,16 @@ function Nabvar() {
   return (
     <div
       style={{
-        border: '1px solid #ccc',
-        borderRadius: "10px",
-        margin: "10px",
-        backgroundColor: '#002e63'
+        display: "flex",
+                flexWrap: "wrap",
+                justifyContent: "center",
+                alignItems: "center",
+                border: "1px solid #ccc",
+                borderRadius: "10px",
+                padding: "20px",
+                margin: "20px 5px",
+                backgroundColor: "#002e63",
+                color: "white"
       }}
     >
      
