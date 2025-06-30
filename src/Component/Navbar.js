@@ -1,83 +1,140 @@
 import React from "react";
 
-function Nabvar() {
+function Navbar() {
+  const image = "https://i.ibb.co/5WL7jPS/AJayk.jpg";
+
   return (
     <div
       style={{
-        display: "flex",
-                flexWrap: "wrap",
-                justifyContent: "center",
-                alignItems: "center",
-                border: "1px solid #ccc",
-                borderRadius: "10px",
-                padding: "20px",
-                margin: "20px 5px",
-                backgroundColor: "#002e63",
-                color: "white"
+        border: '1px solid #ccc',
+        borderRadius: "10px",
+        margin: "20px 5px",
+        padding: "20px",
+        backgroundColor: '#002e63',
+        color: 'white'
       }}
     >
      
-      <nav
-        style={{
+      <nav>
+        <div style={{
           display: 'flex',
           flexWrap: 'wrap',
           justifyContent: 'center',
           gap: '10px',
-          padding: '10px'
-        }}
-      >
-        {["About", "Projects", "Drives Me", "Education", "Experience"].map((label, index) => (
-          <a key={index} href={`#${label.toLowerCase().replace(" ", "")}`}>
-            <button style={buttonStyle}>{label}</button>
-          </a>
-        ))}
+          marginBottom: '30px'
+        }}>
+          <a href="#about"><button style={{backgroundColor: 'white',
+  border: 'none',
+  borderRadius: "8px",
+  minWidth: '150px',
+  padding: '10px',
+  fontWeight: 'bold',
+  color: '#002e63',
+  fontSize: '16px',
+  cursor: 'pointer'}}>About</button></a>
+          <a href="#project"><button style={{backgroundColor: 'white',
+  border: 'none',
+  borderRadius: "8px",
+  minWidth: '150px',
+  padding: '10px',
+  fontWeight: 'bold',
+  color: '#002e63',
+  fontSize: '16px',
+  cursor: 'pointer'}}>Projects</button></a>
+          <a href="#opentoopportunities"><button style={{backgroundColor: 'white',
+  border: 'none',
+  borderRadius: "8px",
+  minWidth: '150px',
+  padding: '10px',
+  fontWeight: 'bold',
+  color: '#002e63',
+  fontSize: '16px',
+  cursor: 'pointer'}}>Open to Opportunities</button></a>
+          <a href="#education"><button style={{backgroundColor: 'white',
+  border: 'none',
+  borderRadius: "8px",
+  minWidth: '150px',
+  padding: '10px',
+  fontWeight: 'bold',
+  color: '#002e63',
+  fontSize: '16px',
+  cursor: 'pointer'}}>Education</button></a>
+          <a href="#experience"><button style={{backgroundColor: 'white',
+  border: 'none',
+  borderRadius: "8px",
+  minWidth: '150px',
+  padding: '10px',
+  fontWeight: 'bold',
+  color: '#002e63',
+  fontSize: '16px',
+  cursor: 'pointer'}}>Experience</button></a>
+        </div>
       </nav>
 
-      
+ 
       <div
-        id="mycontact"
         style={{
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "space-around",
           alignItems: "center",
-          border: "1px solid #ccc",
-          borderRadius: "10px",
-          padding: "40px",
-          margin: "10px",
-          backgroundColor: "#002e63",
-          color: "white",
+          padding: "20px",
+          gap: "30px"
         }}
       >
-        <div style={{ flex: "1 1 300px", marginBottom: "20px" }}>
+        
+        <div style={{
+          flex: "1 1 300px",
+          minWidth: "280px"
+        }}>
           <h1 style={{
-            fontSize: "50px",
+            fontSize: "40px",
             fontFamily: "Merriweather",
-            whiteSpace: 'nowrap',
-            color: "white"
+            marginBottom: "20px",
+            textAlign: 'center'
           }}>
             Hi, I'm Kandula Ajay
           </h1>
-          <p style={{ fontSize: "20px" }}>
+          <p style={{
+            fontSize: "18px",
+            textAlign: "justify",
+            lineHeight: "1.6"
+          }}>
             I'm a Web Developer with 2 years of experience using React.js, Node.js,
-            HTML, CSS, and JavaScript.
+            HTML, CSS, and JavaScript. I focus on building clean and responsive
+            applications with modern technologies and best practices.
           </p>
-          <a href="#contact">
-            <button style={ctaStyle}>Reach Out</button>
-          </a>
+          <div style={{ textAlign: 'center', marginTop: "20px" }}>
+            <a href="#contact">
+              <button style={{color: "white",
+  backgroundColor: '#b31b1b',
+  border: 'none',
+  borderRadius: "8px",
+  width: '200px',
+  padding: '10px',
+  fontWeight: 'bold',
+  fontFamily: 'serif',
+  fontSize: "18px",
+  cursor: 'pointer'}}>Reach Out</button>
+            </a>
+          </div>
         </div>
 
-        <div style={{ flex: "1 1 300px", textAlign: 'right', paddingLeft: "30px" }}>
+        
+        <div style={{
+          flex: "1 1 300px",
+          textAlign: 'center'
+        }}>
           <img
-            src="https://i.ibb.co/5WL7jPSJ/AJayk.jpgs"
+            src={image}
             alt="Ajay Kandula"
             style={{
               width: "400px",
               height: "400px",
               borderRadius: "50%",
-              objectFit: 'cover',
-              boxShadow: '0 10px 20px yellow',
-              transition: 'transform 0.3s ease-in-out'
+              objectFit: "cover",
+              boxShadow: "0 10px 20px yellow",
+              transition: "transform 0.3s ease-in-out"
             }}
           />
         </div>
@@ -86,26 +143,4 @@ function Nabvar() {
   );
 }
 
-const buttonStyle = {
-  backgroundColor: 'white',
-  border: 'none',
-  borderRadius: "8px",
-  width: '150px',
-  padding: '10px',
-  fontWeight: 'bold',
-  color: '#002e63'
-};
-
-const ctaStyle = {
-  color: "white",
-  backgroundColor: '#b31b1b',
-  border: 'none',
-  borderRadius: "8px",
-  width: '200px',
-  padding: '10px',
-  fontWeight: 'bold',
-  fontFamily: 'serif',
-  fontSize: "20px"
-};
-
-export default Nabvar;
+export default Navbar;
