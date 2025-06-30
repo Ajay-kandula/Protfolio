@@ -69,15 +69,19 @@ function Contact() {
                     I am actively looking for new opportunities where I can leverage my React.js, JavaScript, TypeScript, HTML/CSS, Node.js, and MySQL skills. With hands-on experience in building full-stack web applications, I’m confident in my ability to contribute to both frontend and backend development. If you think I can be helpful to you or your team, feel free to reach out!
                 </p>
 
-                <section id="contact" style={{
+                <section id="contact"  style={{
     display: "flex",
-    flexDirection: 'column',
-    alignItems: 'center',
+    flexDirection: window.innerWidth <= 768 ? 'column' : 'row',
+    justifyContent: 'space-around',
+    flexWrap: 'wrap',
     gap: '20px',
     padding: '20px',
     backgroundColor: 'white',
-    borderRadius: '10px'
-}}>
+    borderRadius: '10px',
+    boxSizing: 'border-box',
+    maxWidth: '100%',
+    overflowX: 'hidden'
+}}>s
                     <div style={{
                         flex: "1",
                         minWidth: '250px',

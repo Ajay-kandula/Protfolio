@@ -9,7 +9,7 @@ import Drives from "./Component/What Drives Me";
 
 function App(){
  return(
-   <div style={{justifyContent:'space-between',alignItems:'center',border:'1px solid #ccc',borderRadius:"10px",padding:'20px',margin:'2px'}}>
+   <div style={{justifyContent:'space-between',alignItems:'center',border:'1px solid #ccc',borderRadius:"10px",padding:'20px',margin:'2px',backgroundColor:"#002e63"}}>
     <Nabvar/>
     <About/>
     <Education/>

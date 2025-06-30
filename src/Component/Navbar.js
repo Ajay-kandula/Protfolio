@@ -85,8 +85,8 @@ function Nabvar() {
             src={AjayImage}
             alt="Ajay Kandula"
             style={{
-              width: "250px",
-              height: "250px",
+              width: "350px",
+              height: "350px",
               borderRadius: "50%",
               objectFit: 'cover',
               boxShadow: '0 10px 20px rgb(235, 255, 16)',

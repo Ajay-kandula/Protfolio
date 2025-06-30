@@ -19,7 +19,7 @@ function About() {
                 color: "white"
             }}
         >
-            {/* Image Section */}
+           
             <div style={{
                 flex: "1 1 300px",
                 display: "flex",
@@ -30,8 +30,8 @@ function About() {
                     src={image}
                     alt="Ajay Kandula"
                     style={{
-                        width: '250px',
-                        height: '250px',
+                        width: '350px',
+                        height: '350px',
                         borderRadius: '50%',
                         objectFit: 'cover',
                         boxShadow: '0 10px 20px rgba(255, 16, 16, 0.73)',
@@ -40,7 +40,7 @@ function About() {
                 />
             </div>
 
-            {/* Text Section */}
+           
             <div style={{ flex: "2 1 400px", padding: "10px" }}>
                 <h1 style={{
                     textAlign: 'center',
