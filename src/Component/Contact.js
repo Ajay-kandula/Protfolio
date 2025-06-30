@@ -98,59 +98,51 @@ function Contact() {
                         <p><img src={linkdin} alt="Linkdin" width={20} style={{ marginRight: "8px" }} /> <a href="https://www.linkedin.com/in/kandula-ajay-0504ba248/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: 'black' }}>Linkedin</a></p>
                         <p><img src={insta} alt="instagram" width={20} style={{ marginRight: "8px" }} /><a href="https://www.instagram.com/ajay._.kandula/profilecard/?igsh=cjlmajQ2ZnprNDBi" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'black' }}>Instagram</a></p>
                     </div>
+                    <div style={{flex: "1",
+                            minWidth: '300px',
+                            border: "1px solid #ccc",
+                            borderRadius: "10px",
+                            padding: "20px",
+                            textAlign: "center",
+                            backgroundColor: "white"}}>
 
-                    <form onSubmit={handleSubmit} style={{
-                        flex: "1",
-                        minWidth: '300px',
-                        border: "1px solid #ccc",
-                        borderRadius: "10px",
-                        padding: "20px",
-                        textAlign: "center",
-                        backgroundColor: "white"
-                    }}>
-                        <label>Name:</label><br />
-                        <input
-                            type='text'
-                            name="name"
-                            value={form.name}
-                            placeholder="Enter your name..."
-                            onChange={handleChange}
-                            style={{ width: '100%', marginBottom: '10px', padding: '8px' }}
-                        /><br />
-
-                        <label>Email:</label><br />
-                        <input
-                            type="text"
-                            name="email"
-                            value={form.email}
-                            placeholder="Enter your email..."
-                            onChange={handleChange}
-                            style={{ width: '100%', marginBottom: '10px', padding: '8px' }}
-                        /><br />
-
-                        <label>Message:</label><br />
-                        <textarea
-                            name="message"
-                            value={form.message}
-                            placeholder="Enter your message..."
-                            onChange={handleChange}
-                            rows={4}
-                            style={{ width: '100%', marginBottom: '15px', padding: '8px' }}
-                        ></textarea><br />
-
-                        <button type="submit" style={{
-                            color: "white",
-                            backgroundColor: '#e30022',
-                            fontWeight: "bold",
-                            border: 'none',
-                            borderRadius: "8px",
-                            width: '100%',
-                            padding: "10px"
-                        }}>
-                            Submit
-                        </button>
-                    </form>
-                </section>
+                        <form onSubmit={handleSubmit} >
+                                <label>Name:</label><br />
+                                <input
+                                type='text'
+                                name="name"
+                                value={form.name}
+                                placeholder="Enter your name..."
+                                onChange={handleChange}
+                                style={{ width: '100%', marginBottom: '10px', padding: '8px' }}/><br />
+                                <label>Email:</label><br />
+                                <input
+                                type="text"
+                                name="email"
+                                value={form.email}
+                                placeholder="Enter your email..."
+                                onChange={handleChange}
+                                style={{ width: '100%', marginBottom: '10px', padding: '8px' }}/><br />
+                                <label>Message:</label><br />
+                                <textarea
+                                name="message"
+                                value={form.message}
+                                placeholder="Enter your message..."
+                                onChange={handleChange}
+                                rows={4}
+                                style={{ width: '100%', marginBottom: '15px', padding: '8px' }}></textarea><br />
+                                <button type="submit" style={{
+                                    color: "white",
+                                    backgroundColor: '#e30022',
+                                    fontWeight: "bold",
+                                    border: 'none',
+                                    borderRadius: "8px",
+                                    width: '100%',
+                                    padding: "10px"
+                                    }}>Submit
+                                </button>
+                                </form>
+                                </div></section>
             </div>
 
             <p style={{ color: "black", textAlign: 'center', marginTop: '20px' }}>

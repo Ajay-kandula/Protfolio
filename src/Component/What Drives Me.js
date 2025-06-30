@@ -4,7 +4,7 @@ function Drives() {
   return (
     <div style={{justifyContent:'space-between',marginRight:'5p',padding:'10px',backgroundColor:'#002e63',color:"white"}}>
       <section
-        id="drives">
+        id="drives" style={{border:"1px solid #ccc" ,borderRadius:"10px" ,color:"white"}}>
     
         <h1
           style={{
@@ -12,7 +12,7 @@ function Drives() {
             fontSize: "50px",
             fontFamily: "sans-serif",
             marginBottom: "30px",
-            color:"white",
+            color:"white"
           }}
         >
           What Drives Me!
