@@ -80,7 +80,7 @@ function Nabvar() {
           </a>
         </div>
 
-        <div style={{ flex: "1 1 300px", textAlign: "center" }}>
+        <div style={{ flex: "1 1 300px", textAlign: "right" }}>
           <img
             src={AjayImage}
             alt="Ajay Kandula"
