@@ -1,7 +1,7 @@
 import React from "react";
 
 function Navbar() {
-  const image = "https://i.ibb.co/5WL7jPSJ/AJayk.jpg";
+  const image = "https://i.ibb.co/5WL7jPSJ/AJayk.jpg"; 
 
   return (
     <div
@@ -11,95 +11,124 @@ function Navbar() {
         margin: "20px 5px",
         padding: "20px",
         backgroundColor: '#002e63',
-        color: 'white'
+        color: 'white',
+        maxWidth: "100%",
+        boxSizing: "border-box"
       }}
     >
-     
+      
       <nav>
-        <div style={{
-          display: 'flex',
-          flexWrap: 'wrap',
-          justifyContent: 'center',
-          gap: '10px',
-          marginBottom: '30px'
-        }}>
-          <a href="#about"><button style={{backgroundColor: 'white',
-  border: 'none',
-  borderRadius: "8px",
-  minWidth: '150px',
-  padding: '10px',
+        <div
+          style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            justifyContent: 'center',
+            gap: '10px',
+            marginBottom: '30px'
+          }}
+        >
+          <a href="#about" style={{ width: "100%", maxWidth: "300px" }}>
+            <button style={{
+  width: "100%",
+  padding: '12px',
   fontWeight: 'bold',
-  color: '#002e63',
-  fontSize: '16px',
-  cursor: 'pointer'}}>About</button></a>
-          <a href="#project"><button style={{backgroundColor: 'white',
+  backgroundColor: 'white',
   border: 'none',
-  borderRadius: "8px",
-  minWidth: '150px',
-  padding: '10px',
-  fontWeight: 'bold',
-  color: '#002e63',
+  borderRadius: '8px',
   fontSize: '16px',
-  cursor: 'pointer'}}>Projects</button></a>
-          <a href="#opentoopportunities"><button style={{backgroundColor: 'white',
+  color: '#002e63',
+  cursor: 'pointer',
+  boxSizing: "border-box"
+}}>About</button>
+          </a>
+          <a href="#project" style={{ width: "100%", maxWidth: "300px" }}>
+            <button style={{
+  width: "100%",
+  padding: '12px',
+  fontWeight: 'bold',
+  backgroundColor: 'white',
   border: 'none',
-  borderRadius: "8px",
-  minWidth: '150px',
-  padding: '10px',
-  fontWeight: 'bold',
-  color: '#002e63',
+  borderRadius: '8px',
   fontSize: '16px',
-  cursor: 'pointer'}}>Open to Opportunities</button></a>
-          <a href="#education"><button style={{backgroundColor: 'white',
+  color: '#002e63',
+  cursor: 'pointer',
+  boxSizing: "border-box"
+}}>Projects</button>
+          </a>
+          <a href="#opentoopportunities" style={{ width: "100%", maxWidth: "300px" }}>
+            <button style={{
+  width: "100%",
+  padding: '12px',
+  fontWeight: 'bold',
+  backgroundColor: 'white',
   border: 'none',
-  borderRadius: "8px",
-  minWidth: '150px',
-  padding: '10px',
-  fontWeight: 'bold',
-  color: '#002e63',
+  borderRadius: '8px',
   fontSize: '16px',
-  cursor: 'pointer'}}>Education</button></a>
-          <a href="#experience"><button style={{backgroundColor: 'white',
+  color: '#002e63',
+  cursor: 'pointer',
+  boxSizing: "border-box"
+}}>Open to Opportunities</button>
+          </a>
+          <a href="#education" style={{ width: "100%", maxWidth: "300px" }}>
+            <button style={{
+  width: "100%",
+  padding: '12px',
+  fontWeight: 'bold',
+  backgroundColor: 'white',
   border: 'none',
-  borderRadius: "8px",
-  minWidth: '150px',
-  padding: '10px',
-  fontWeight: 'bold',
-  color: '#002e63',
+  borderRadius: '8px',
   fontSize: '16px',
-  cursor: 'pointer'}}>Experience</button></a>
+  color: '#002e63',
+  cursor: 'pointer',
+  boxSizing: "border-box"
+}}>Education</button>
+          </a>
+          <a href="#experience" style={{ width: "100%", maxWidth: "300px" }}>
+            <button style={{
+  width: "100%",
+  padding: '12px',
+  fontWeight: 'bold',
+  backgroundColor: 'white',
+  border: 'none',
+  borderRadius: '8px',
+  fontSize: '16px',
+  color: '#002e63',
+  cursor: 'pointer',
+  boxSizing: "border-box"
+}}>Experience</button>
+          </a>
         </div>
       </nav>
 
- 
       <div
         style={{
           display: "flex",
           flexWrap: "wrap",
-          justifyContent: "space-around",
+          justifyContent: "center",
           alignItems: "center",
           padding: "20px",
           gap: "30px"
         }}
       >
         
-        <div style={{
-          flex: "1 1 300px",
-          minWidth: "280px"
-        }}>
-          <h1 style={{
-            fontSize: "40px",
-            fontFamily: "Merriweather",
-            marginBottom: "20px",
-            textAlign: 'center'
-          }}>
+        <div style={{ flex: "1 1 300px", minWidth: "280px", maxWidth: "500px" }}>
+          <h1
+            style={{
+              fontSize: "32px",
+              fontFamily: "Merriweather",
+              marginBottom: "20px",
+              textAlign: 'center'
+            }}
+          >
             Hi, I'm Kandula Ajay
           </h1>
-          <p style={{
-            fontSize: "18px",
-            textAlign: "justify",
-            lineHeight: "1.6"
-          }}>
+          <p
+            style={{
+              fontSize: "18px",
+              textAlign: "justify",
+              lineHeight: "1.6"
+            }}
+          >
             I'm a Web Developer with 2 years of experience using React.js, Node.js,
             HTML, CSS, and JavaScript. I focus on building clean and responsive
             applications with modern technologies and best practices.
@@ -123,14 +152,16 @@ function Navbar() {
         
         <div style={{
           flex: "1 1 300px",
+          maxWidth: "100%",
           textAlign: 'center'
         }}>
           <img
             src={image}
             alt="Ajay Kandula"
             style={{
-              width: "400px",
-              height: "400px",
+              width: "100%",
+              maxWidth: "300px",
+              height: "auto",
               borderRadius: "50%",
               objectFit: "cover",
               boxShadow: "0 10px 20px yellow",
@@ -142,5 +173,9 @@ function Navbar() {
     </div>
   );
 }
+
+
+
+
 
 export default Navbar;
