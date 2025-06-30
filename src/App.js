@@ -15,7 +15,6 @@ function App(){
     <Education/>
     <Drives/>
     <Project/>
-    
     <Experience/>
     <Contact/>
   </div>

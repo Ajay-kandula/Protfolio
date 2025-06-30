@@ -1,7 +1,7 @@
 import React from "react";
 
 function About() {
-    const image = './images/Ajayk.jpg';
+    const image = 'https://i.ibb.co/5WL7jPSJ/AJayk.jpg';
     return (
         <section
             id="about"
