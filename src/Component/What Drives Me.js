@@ -2,7 +2,7 @@ import React from "react";
 
 function Drives() {
   return (
-    <div style={{justifyContent:'space-between',marginRight:'5px', border:'1px solid#ccc', borderRadius:"10px",padding:'10px',backgroundColor:'#002e63'}}>
+    <div style={{justifyContent:'space-between',marginRight:'5p',padding:'10px',backgroundColor:'#002e63',color:"white"}}>
       <section
         id="drives">
     
@@ -12,6 +12,7 @@ function Drives() {
             fontSize: "50px",
             fontFamily: "sans-serif",
             marginBottom: "30px",
+            color:"white"
           }}
         >
           What Drives Me!
@@ -34,7 +35,7 @@ function Drives() {
               borderRadius: "10px",
               padding: "10px",
               backgroundColor: "#014f86",
-              marginLeft:'20px'
+              
             }}
           >
             <h2 style={{textAlign:"center"}}>Skills</h2>
@@ -56,6 +57,7 @@ function Drives() {
               padding: "20px",
               backgroundColor: "#014f86",
               
+              
             }}
           >
             <h2 style={{textAlign:"center"}}>Achievements</h2>
@@ -76,7 +78,7 @@ function Drives() {
               borderRadius: "10px",
               padding: "20px",
               backgroundColor: "#014f86",
-              marginRight:'20px'
+              
             
             }}
           >

@@ -71,7 +71,7 @@ function Contact() {
 
                 <section id="contact"  style={{
     display: "flex",
-    flexDirection: window.innerWidth <= 768 ? 'column' : 'row',
+    flexDirection: isMobile? "column" :'row',
     justifyContent: 'space-around',
     flexWrap: 'wrap',
     gap: '20px',
@@ -84,7 +84,6 @@ function Contact() {
 }}>
                     <div style={{
                         flex: "1",
-                        minWidth: '250px',
                         border: "1px solid #ccc",
                         borderRadius: "10px",
                         padding: "20px",

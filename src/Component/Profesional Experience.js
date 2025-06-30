@@ -4,7 +4,7 @@ function Experience(){
         <div style={{border:"1px solid #ccc",borderRadius:"10px",backgroundColor:"#002e63",marginTop:"20px",color:'white',padding:"20px",textAlign:"center"}}>
             <section id="experience" style={{justifyContent:"space-between",border:"1px solid #ccc",borderRadius:'10px',padding:"20px",margin:"20px",textAlign:'center'}}>
                 <h1 style={{fontSize:"40px"}}>Profesional Experience</h1>
-                <div style={{border:"none",borderRadius:"10px",backgroundColor:"#f8d568",color:"black",marginRight:"10px",marginLeft:"10px"}}>
+                <div style={{border:"none",borderRadius:"10px",backgroundColor:"#014f86",color:"black",marginRight:"10px",marginLeft:"10px"}}>
                     
                     <h1 style={{marginTop:"5px"}}>Data Analyst - ShowTime Consultancy</h1>
                     <p>Year: 2023 – 2024/05 </p>
@@ -15,7 +15,7 @@ reports and dashboards to support strategic campaign decisions. Used Excel for t
 analysis, pivot tables, and visualizations; used SQL to extract and segment voter data for
 targeted outreach and planning</p>
                 </div>
-                <div  style={{border:"none",borderRadius:"10px",backgroundColor:"#f8d568",color:"black",marginRight:"10px",marginLeft:"10px",marginTop:"15px"}}>
+                <div  style={{border:"none",borderRadius:"10px",backgroundColor:"#014f86",color:"black",marginRight:"10px",marginLeft:"10px",marginTop:"15px"}}>
                     <h1 style={{marginTop:'5px'}}>Management Trainee - Raam Group</h1>
                     <p>Year: 2024/07 – 2024/11</p>
                     <p style={{textAlign:"center"}}>React.js to streamline service bookings, track vehicle status, and manage customer
@@ -25,7 +25,7 @@ REST APIs for backend communication and ensured smooth user experience across
 devices.
 </p> 
                 </div>
-                <div style={{border:"none",borderRadius:"10px",backgroundColor:"#f8d568",color:"black",marginRight:"10px",marginLeft:"10px",marginTop:"15px"}}>
+                <div style={{border:"none",borderRadius:"10px",backgroundColor:"#014f86",color:"black",marginRight:"10px",marginLeft:"10px",marginTop:"15px"}}>
                    <h1 style={{marginTop:"5px"}}>Jr Software Engineer- SLTECHNOCRATS</h1>
                    <p style={{textAlign:"center"}}>Year : 2024-present</p>
                    <p>Worked as a developer on a Teleradiology platform using React.js, JavaScript, Express.js,
