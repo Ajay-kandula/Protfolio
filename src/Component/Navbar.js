@@ -29,7 +29,7 @@ function Nabvar(){
             <div style={{marginLeft:'10px'}}>
                 <h1 style={{fontSize:"60px",marginLeft:"5px",marginTop:'10px',fontFamily:'Merriweather',color:"white"}}>Hi, I'm Kandula Ajay</h1>
                 <p style={{justifyContent:'space-between', fontFamily:'initial',fontSize:"25px"}}>I'm a  Web Developer with 2 years of experience using React.js, Node.js, HTML, CSS, and JavaScript. Reach out if you you'd like to learn more!</p>  
-                <a href="#contact" ><button style={{color:"white",backgroundColor:'#b31b1b',border:'none',borderRadius:"8px",width:'200px',padding:'10px',textDecoration:'none',marginRight:'30px',fontWeight:'bold',fontFamily:'serif',fontStyle:'oblique',fontSize:"25px"}}>Contact Me</button></a>
+                <a href="#contact" ><button style={{color:"white",backgroundColor:'#b31b1b',border:'none',borderRadius:"8px",width:'200px',padding:'10px',textDecoration:'none',marginRight:'30px',fontWeight:'bold',fontFamily:'serif',fontStyle:'oblique',fontSize:"25px"}}>Reach Out</button></a>
             </div>
 
             <img
