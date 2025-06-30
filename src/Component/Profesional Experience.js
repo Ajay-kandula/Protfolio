@@ -27,7 +27,7 @@ function Experience() {
           Professional Experience
         </h1>
 
-        {/* Experience 1 */}
+       
         <div
           style={{
             border: "1px solid white",
@@ -48,7 +48,6 @@ function Experience() {
           </p>
         </div>
 
-        {/* Experience 2 */}
         <div
           style={{
             border: "1px solid white",
@@ -68,7 +67,7 @@ function Experience() {
           </p>
         </div>
 
-        {/* Experience 3 */}
+       
         <div
           style={{
             border: "1px solid white",

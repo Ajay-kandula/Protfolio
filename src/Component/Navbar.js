@@ -61,7 +61,7 @@ function Nabvar() {
           </a>
         </div>
 
-        <div style={{ flex: "1 1 300px", textAlign: "center", paddingLeft: "30px" }}>
+        <div style={{ flex: "1 1 300px", textAlign: 'right', paddingLeft: "30px" }}>
           <img
             src="https://i.ibb.co/5WL7jPSJ/AJayk.jpgs"
             alt="Ajay Kandula"

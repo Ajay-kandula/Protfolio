@@ -68,7 +68,7 @@ function Contact() {
           borderRadius: "10px",
           boxSizing: "border-box"
         }}>
-          {/* Contact Info */}
+          
           <div style={{
             flex: "1 1 300px",
             border: "1px solid #ccc",
@@ -78,7 +78,7 @@ function Contact() {
             backgroundColor: "white",
             fontSize: '16px'
           }}>
-            <p>✉ <a href="mailto:ajaykandula0222@gmail.com" style={linkStyle}><strong>ajaykandula0222@gmail.com</strong></a></p>
+            <p>✉  <a href="mailto:ajaykandula0222@gmail.com" style={linkStyle}><strong>ajaykandula0222@gmail.com</strong></a></p>
             <p>📞 <a href="tel:9848096642" style={linkStyle}>9848096642</a></p>
             <p>🏠 <strong>Nandigama, Andhra Pradesh</strong></p>
             <p>📅 <strong>26/11/2001</strong></p>
@@ -86,7 +86,7 @@ function Contact() {
             <p><img src={insta} alt="Instagram" width={20} style={{ marginRight: "8px" }} /> <a href="https://www.instagram.com/ajay._.kandula/profilecard/?igsh=cjlmajQ2ZnprNDBi" target="_blank" rel="noreferrer" style={linkStyle}>Instagram</a></p>
           </div>
 
-          {/* Contact Form */}
+          
           <div style={{
             flex: "1 1 300px",
             border: "1px solid #ccc",
