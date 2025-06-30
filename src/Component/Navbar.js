@@ -1,7 +1,7 @@
 import React from "react";
 
 function Navbar() {
-  const image = "https://i.ibb.co/5WL7jPS/AJayk.jpg";
+  const image = "https://i.ibb.co/5WL7jPSJ/AJayk.jpg";
 
   return (
     <div
