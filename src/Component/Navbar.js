@@ -66,8 +66,8 @@ function Nabvar() {
             src="https://i.ibb.co/5WL7jPSJ/AJayk.jpgs"
             alt="Ajay Kandula"
             style={{
-              width: "300px",
-              height: "300px",
+              width: "400px",
+              height: "400px",
               borderRadius: "50%",
               objectFit: 'cover',
               boxShadow: '0 10px 20px yellow',
