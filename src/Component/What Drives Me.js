@@ -7,7 +7,7 @@ function Drives() {
       margin: '5px',
       padding: '10px',
       backgroundColor: '#002e63',
-      color: "black"
+      color: "white"
     }}>
       <section
         id="drives"
@@ -15,15 +15,16 @@ function Drives() {
           border: "1px solid #ccc",
           borderRadius: "10px",
           padding: "20px",
-          backgroundColor: "#ffffff",
-          color: "black"
+          backgroundColor: "#002e63", 
+          color: "white"
         }}
       >
         <h1 style={{
           textAlign: "center",
           fontSize: "40px",
           fontFamily: "sans-serif",
-          marginBottom: "30px"
+          marginBottom: "30px",
+          color: "white"
         }}>
           What Drives Me!
         </h1>
@@ -35,7 +36,7 @@ function Drives() {
           gap: "20px"
         }}>
           <div style={cardStyle}>
-            <h2 style={{ textAlign: "center" }}>Skills</h2>
+            <h2 style={{ textAlign: "center", color: 'white' }}>Skills</h2>
             <ul>
               <li>JavaScript, TypeScript, React.js, Node.js, CSS, HTML</li>
               <li>Data Analysis – Excel, SQL</li>
@@ -45,7 +46,7 @@ function Drives() {
           </div>
 
           <div style={cardStyle}>
-            <h2 style={{ textAlign: "center" }}>Achievements</h2>
+            <h2 style={{ textAlign: "center", color: 'white' }}>Achievements</h2>
             <ul>
               <li>Secured AIR 24 in IMO</li>
               <li>Technical Poster Presentation Winner</li>
@@ -55,7 +56,7 @@ function Drives() {
           </div>
 
           <div style={cardStyle}>
-            <h2 style={{ textAlign: 'center' }}>Interests</h2>
+            <h2 style={{ textAlign: 'center', color: 'white' }}>Interests</h2>
             <ul>
               <li>Reading and Blogging</li>
               <li>Designing</li>
@@ -78,8 +79,8 @@ const cardStyle = {
   border: "1px solid #ccc",
   borderRadius: "10px",
   padding: "20px",
-  backgroundColor: "#f0f0f0",
-  color: "black"
+  backgroundColor: "#014f86", 
+  color: "white"
 };
 
 export default Drives;

@@ -32,7 +32,7 @@ function Project() {
           Projects
         </h1>
 
-        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '20px' }}>
+        <div style={{  justifyContent: 'center', gap: '20px' }}>
           <div
             style={{
               border: "1px solid #ccc",
