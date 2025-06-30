@@ -71,17 +71,17 @@ function Contact() {
 
                 <section id="contact"  style={{
     display: "flex",
-    flexDirection: isMobiLE? "column" :'row',
-    justifyContent: 'space-around',
+    flexDirection: "row",
     flexWrap: 'wrap',
-    gap: '20px',
-    padding: '20px',
-    backgroundColor: 'white',
-    borderRadius: '10px',
-    boxSizing: 'border-box',
-    maxWidth: '100%',
-    overflowX: 'hidden'
-}}>
+    justifyContent: "space-around",
+    gap: "20px",
+    padding: "20px",
+    backgroundColor: "white",
+    borderRadius: "10px",
+    boxSizing: "border-box",
+    maxWidth: "100%",
+    overflowX: "hidden"
+  }}>
                     <div style={{
                         flex: "1",
                         border: "1px solid #ccc",
