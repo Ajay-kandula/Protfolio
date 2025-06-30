@@ -70,14 +70,14 @@ function Contact() {
                 </p>
 
                 <section id="contact" style={{
-                    display: "flex",
-                    justifyContent: 'space-around',
-                    flexWrap: 'wrap',
-                    gap: '20px',
-                    padding: '20px',
-                    backgroundColor: 'white',
-                    borderRadius: '10px'
-                }}>
+    display: "flex",
+    flexDirection: 'column',
+    alignItems: 'center',
+    gap: '20px',
+    padding: '20px',
+    backgroundColor: 'white',
+    borderRadius: '10px'
+}}>
                     <div style={{
                         flex: "1",
                         minWidth: '250px',

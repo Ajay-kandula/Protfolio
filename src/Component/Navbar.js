@@ -3,7 +3,7 @@ function Nabvar(){
     const AjayImage='https://i.ibb.co/5WL7jPSJ/AJayk.jpgs'
     return(
         <div style={{justifyContent:'space-between',marginRight:'5px',fontSize:"30px", border:'1px solid#ccc', borderRadius:"10px",padding:'10px',backgroundColor:'#002e63'}}>
-            <nav>   
+            <nav style={{ display: 'flex', flexWrap: 'wrap', flexDirection: 'column' }}>   
                 <div>
                     <a href="#about" ><button style={{color:'black',backgroundColor:'white',border:'none',borderRadius:"8px",width:'200px',padding:'10px',textDecoration:'none',marginRight:'20px',marginLeft:'55px',fontWeight:'bold'}}>About</button></a>
                     <a href="#project" ><button style={{color:"black",backgroundColor:'white',border:'none',borderRadius:"8px",width:'200px',padding:'10px',textDecoration:'none',marginRight:'20px',fontWeight:'bold'}}>Projects</button></a>
