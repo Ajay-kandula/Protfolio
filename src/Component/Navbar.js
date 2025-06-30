@@ -54,6 +54,7 @@ function Nabvar() {
             marginLeft: "5px",
             marginTop: "10px",
             fontFamily: "Merriweather",
+            whiteSpace:'nowrap',
             color: "white"
           }}>
             Hi, I'm Kandula Ajay
@@ -80,7 +81,7 @@ function Nabvar() {
           </a>
         </div>
 
-        <div style={{ flex: "1 1 300px", textAlign: "right" }}>
+        <div style={{ flex: "1 1 300px", textAlign: "center" ,paddingLeft:"30px" }}>
           <img
             src={AjayImage}
             alt="Ajay Kandula"
