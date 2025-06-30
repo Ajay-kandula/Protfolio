@@ -2,42 +2,60 @@ import React from "react";
 
 function About() {
     const image = 'https://i.ibb.co/5WL7jPSJ/AJayk.jpg';
+
     return (
         <section
             id="about"
             style={{
                 display: "flex",
-                justifyContent: "space-between",
+                flexWrap: "wrap",
+                justifyContent: "center",
                 alignItems: "center",
                 border: "1px solid #ccc",
                 borderRadius: "10px",
                 padding: "20px",
-                margin: "20px",
+                margin: "20px 5px",
                 backgroundColor: "#002e63",
-                color: 'white',
-                marginRight:'5px',marginLeft:'5px'
-                
+                color: "white"
             }}
         >
-            <div>
+            {/* Image Section */}
+            <div style={{
+                flex: "1 1 300px",
+                display: "flex",
+                justifyContent: "center",
+                marginBottom: "20px"
+            }}>
                 <img
                     src={image}
-                    alt="Ajayk"
-                    height={350}
-                    width={350}
-                    style={{width: '350px',
-                        height: '350px',
+                    alt="Ajay Kandula"
+                    style={{
+                        width: '250px',
+                        height: '250px',
                         borderRadius: '50%',
                         objectFit: 'cover',
                         boxShadow: '0 10px 20px rgba(255, 16, 16, 0.73)',
-                        transition: 'transform 0.3s ease-in-out'}}
-                
+                        transition: 'transform 0.3s ease-in-out'
+                    }}
                 />
             </div>
 
-            <div style={{ marginLeft: '50px' }}>
-                <h1 style={{textAlign:'center',fontFamily:'monospace',fontSize:"60px",marginTop:"5px"}}>About</h1>
-                <p style={{fontStyle:'italic',fontSize:"20px"}}>
+            {/* Text Section */}
+            <div style={{ flex: "2 1 400px", padding: "10px" }}>
+                <h1 style={{
+                    textAlign: 'center',
+                    fontFamily: 'monospace',
+                    fontSize: "40px",
+                    marginBottom: "20px"
+                }}>
+                    About
+                </h1>
+                <p style={{
+                    fontStyle: 'italic',
+                    fontSize: "18px",
+                    lineHeight: "1.6",
+                    textAlign: "justify"
+                }}>
                     Skilled Full-Stack JavaScript Developer with hands-on experience in JavaScript, TypeScript, React.js, and
                     Express.js. Proficient in building dynamic, high-performance web applications with a strong focus on front-end
                     development using React and robust back-end APIs using Express. Experienced in using React Hooks, Redux, and
