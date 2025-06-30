@@ -144,7 +144,7 @@ function Navbar() {
   fontWeight: 'bold',
   fontFamily: 'serif',
   fontSize: "18px",
-  cursor: 'pointer'}}>Reach Out</button>
+  cursor: 'pointer'}}>Reach Out Me</button>
             </a>
           </div>
         </div>
