@@ -1,45 +1,95 @@
 import React from "react";
-function Experience(){
-    return(
-        <div style={{border:"1px solid #ccc",borderRadius:"10px",backgroundColor:"#002e63",marginTop:"20px",color:'white',padding:"20px",textAlign:"center"}}>
-            <section id="experience" style={{justifyContent:"space-between",border:"1px solid #ccc",borderRadius:'10px',padding:"20px",margin:"20px",textAlign:'center'}}>
-                <h1 style={{fontSize:"40px"}}>Profesional Experience</h1>
-                <div style={{border:"none",borderRadius:"10px",backgroundColor:"#014f86",color:"black",marginRight:"10px",marginLeft:"10px"}}>
-                    
-                    <h1 style={{marginTop:"5px"}}>Data Analyst - ShowTime Consultancy</h1>
-                    <p>Year: 2023 – 2024/05 </p>
-                    <p style={{textAlign:'center'}}>Worked as a Political Consultant handling voter data analysis and campaign insights
-using SQL and Excel. Collected, cleaned, and analyzed large datasets related to voter
-demographics, polling booth data, and election performance. Generated actionable
-reports and dashboards to support strategic campaign decisions. Used Excel for trend
-analysis, pivot tables, and visualizations; used SQL to extract and segment voter data for
-targeted outreach and planning</p>
-                </div>
-                <div  style={{border:"none",borderRadius:"10px",backgroundColor:"#014f86",color:"black",marginRight:"10px",marginLeft:"10px",marginTop:"15px"}}>
-                    <h1 style={{marginTop:'5px'}}>Management Trainee - Raam Group</h1>
-                    <p>Year: 2024/07 – 2024/11</p>
-                    <p style={{textAlign:"center"}}>React.js to streamline service bookings, track vehicle status, and manage customer
-information. Built responsive user interfaces for customers and service staff, including
-features like service history, appointment scheduling, and real-time updates. Integrated
-REST APIs for backend communication and ensured smooth user experience across
-devices.
-</p> 
-                </div>
-                <div style={{border:"none",borderRadius:"10px",backgroundColor:"#014f86",color:"black",marginRight:"10px",marginLeft:"10px",marginTop:"15px"}}>
-                   <h1 style={{marginTop:"5px"}}>Jr Software Engineer- SLTECHNOCRATS</h1>
-                   <p style={{textAlign:"center"}}>Year : 2024-present</p>
-                   <p>Worked as a developer on a Teleradiology platform using React.js, JavaScript, Express.js,
-and SQL. Developed and maintained user interfaces for diagnostic centers, radiologists,
-and administrators. Built dashboards, patient data forms, case management features, and
-integrated APIs for real-time reporting. Used SQL and Express.js to handle backend
-operations, user roles, and report workflows, ensuring smooth and efficient
-communication across the platform.</p>
-                </div>
-    
-         
-        
-        </section>
+
+function Experience() {
+  return (
+    <div
+      style={{
+        border: "1px solid #ccc",
+        borderRadius: "10px",
+        backgroundColor: "#002e63",
+        marginTop: "20px",
+        color: "white",
+        padding: "20px",
+        textAlign: "center",
+      }}
+    >
+      <section
+        id="experience"
+        style={{
+          border: "1px solid #ccc",
+          borderRadius: "10px",
+          padding: "20px",
+          margin: "20px 5px",
+          textAlign: "center",
+        }}
+      >
+        <h1 style={{ fontSize: "40px", color: "white", fontFamily: "revert" }}>
+          Professional Experience
+        </h1>
+
+        {/* Experience 1 */}
+        <div
+          style={{
+            border: "1px solid white",
+            borderRadius: "10px",
+            backgroundColor: "#014f86",
+            color: "white",
+            padding: "15px",
+            margin: "15px 0",
+          }}
+        >
+          <h2>Data Analyst - ShowTime Consultancy</h2>
+          <p>Year: 2023 – 2024/05</p>
+          <p style={{ textAlign: "justify" }}>
+            Worked as a Political Consultant handling voter data analysis and campaign insights using SQL and Excel.
+            Collected, cleaned, and analyzed large datasets related to voter demographics, polling booth data, and
+            election performance. Generated actionable reports and dashboards to support strategic campaign decisions.
+            Used Excel for trend analysis and SQL to extract and segment voter data for targeted outreach.
+          </p>
         </div>
-    )
+
+        {/* Experience 2 */}
+        <div
+          style={{
+            border: "1px solid white",
+            borderRadius: "10px",
+            backgroundColor: "#014f86",
+            color: "white",
+            padding: "15px",
+            margin: "15px 0",
+          }}
+        >
+          <h2>Management Trainee - Raam Group</h2>
+          <p>Year: 2024/07 – 2024/11</p>
+          <p style={{ textAlign: "justify" }}>
+            Used React.js to streamline service bookings, track vehicle status, and manage customer information.
+            Built responsive interfaces for customers and service staff with features like service history and
+            real-time updates. Integrated REST APIs and ensured smooth experience across devices.
+          </p>
+        </div>
+
+        {/* Experience 3 */}
+        <div
+          style={{
+            border: "1px solid white",
+            borderRadius: "10px",
+            backgroundColor: "#014f86",
+            color: "white",
+            padding: "15px",
+            margin: "15px 0",
+          }}
+        >
+          <h2>Jr Software Engineer - SLTECHNOCRATS</h2>
+          <p>Year: 2024 – Present</p>
+          <p style={{ textAlign: "justify" }}>
+            Worked on a Teleradiology platform using React.js, JavaScript, Express.js, and SQL. Developed dashboards,
+            patient forms, and case management features. Integrated APIs for real-time reporting. Used Express and SQL
+            for backend operations and streamlined radiology workflows.
+          </p>
+        </div>
+      </section>
+    </div>
+  );
 }
-export default Experience; 
+
+export default Experience;

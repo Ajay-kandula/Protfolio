@@ -1,44 +1,39 @@
 import React from "react";
 
 function Nabvar() {
-  const AjayImage = 'https://i.ibb.co/5WL7jPSJ/AJayk.jpgs';
-
   return (
     <div
       style={{
-        justifyContent: 'space-between',
-        marginRight: '5px',
-        fontSize: "30px",
         border: '1px solid #ccc',
         borderRadius: "10px",
-        padding: '10px',
+        margin: "10px",
         backgroundColor: '#002e63'
       }}
     >
-
-      <nav style={{ textAlign: 'center', marginBottom: '20px' }}>
-        <a href="#about">
-          <button style={buttonStyle}>About</button>
-        </a>
-        <a href="#project">
-          <button style={buttonStyle}>Projects</button>
-        </a>
-        <a href="#drives">
-          <button style={buttonStyle}>Drives Me</button>
-        </a>
-        <a href="#education">
-          <button style={buttonStyle}>Education</button>
-        </a>
-        <a href="#experience">
-          <button style={buttonStyle}>Experience</button>
-        </a>
+     
+      <nav
+        style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          justifyContent: 'center',
+          gap: '10px',
+          padding: '10px'
+        }}
+      >
+        {["About", "Projects", "Drives Me", "Education", "Experience"].map((label, index) => (
+          <a key={index} href={`#${label.toLowerCase().replace(" ", "")}`}>
+            <button style={buttonStyle}>{label}</button>
+          </a>
+        ))}
       </nav>
+
+      
       <div
         id="mycontact"
         style={{
           display: "flex",
           flexWrap: "wrap",
-          justifyContent: "space-between",
+          justifyContent: "space-around",
           alignItems: "center",
           border: "1px solid #ccc",
           borderRadius: "10px",
@@ -50,47 +45,32 @@ function Nabvar() {
       >
         <div style={{ flex: "1 1 300px", marginBottom: "20px" }}>
           <h1 style={{
-            fontSize: "60px",
-            marginLeft: "5px",
-            marginTop: "10px",
+            fontSize: "50px",
             fontFamily: "Merriweather",
-            whiteSpace:'nowrap',
+            whiteSpace: 'nowrap',
             color: "white"
           }}>
             Hi, I'm Kandula Ajay
           </h1>
-          <p style={{ fontFamily: 'initial', fontSize: "25px" }}>
+          <p style={{ fontSize: "20px" }}>
             I'm a Web Developer with 2 years of experience using React.js, Node.js,
-            HTML, CSS, and JavaScript. Reach out if you'd like to learn more!
+            HTML, CSS, and JavaScript.
           </p>
           <a href="#contact">
-            <button style={{
-              color: "white",
-              backgroundColor: '#b31b1b',
-              border: 'none',
-              borderRadius: "8px",
-              width: '200px',
-              padding: '10px',
-              fontWeight: 'bold',
-              fontFamily: 'serif',
-              fontStyle: 'oblique',
-              fontSize: "25px"
-            }}>
-              Reach Out
-            </button>
+            <button style={ctaStyle}>Reach Out</button>
           </a>
         </div>
 
-        <div style={{ flex: "1 1 300px", textAlign: "center" ,paddingLeft:"30px" }}>
+        <div style={{ flex: "1 1 300px", textAlign: "center", paddingLeft: "30px" }}>
           <img
-            src={AjayImage}
+            src="https://i.ibb.co/5WL7jPSJ/AJayk.jpgs"
             alt="Ajay Kandula"
             style={{
-              width: "350px",
-              height: "350px",
+              width: "300px",
+              height: "300px",
               borderRadius: "50%",
               objectFit: 'cover',
-              boxShadow: '0 10px 20px rgb(235, 255, 16)',
+              boxShadow: '0 10px 20px yellow',
               transition: 'transform 0.3s ease-in-out'
             }}
           />
@@ -101,15 +81,25 @@ function Nabvar() {
 }
 
 const buttonStyle = {
-  color: 'black',
   backgroundColor: 'white',
   border: 'none',
   borderRadius: "8px",
   width: '150px',
   padding: '10px',
-  textDecoration: 'none',
-  margin: '5px',
-  fontWeight: 'bold'
+  fontWeight: 'bold',
+  color: '#002e63'
+};
+
+const ctaStyle = {
+  color: "white",
+  backgroundColor: '#b31b1b',
+  border: 'none',
+  borderRadius: "8px",
+  width: '200px',
+  padding: '10px',
+  fontWeight: 'bold',
+  fontFamily: 'serif',
+  fontSize: "20px"
 };
 
 export default Nabvar;
