@@ -37,6 +37,7 @@ function Nabvar() {
         id="mycontact"
         style={{
           display: "flex",
+          flexDirection:"row",
           flexWrap: "wrap",
           justifyContent: "space-between",
           alignItems: "center",
@@ -46,6 +47,7 @@ function Nabvar() {
           margin: "10px",
           backgroundColor: "#002e63",
           color: "white",
+          flexWrap:"wrap"
         }}
       >
         <div style={{ flex: "1 1 300px", marginBottom: "20px" }}>
