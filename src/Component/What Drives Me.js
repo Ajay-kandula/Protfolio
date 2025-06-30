@@ -4,15 +4,8 @@ function Drives() {
   return (
     <div style={{justifyContent:'space-between',marginRight:'5px', border:'1px solid#ccc', borderRadius:"10px",padding:'10px',backgroundColor:'#002e63'}}>
       <section
-        id="drives"
-        style={{
-          border: "1px solid #ccc",
-          borderRadius: "10px",
-          margin: "20px",
-          backgroundColor: "#002e63",
-          color: "white",
-        }}
-      >
+        id="drives">
+    
         <h1
           style={{
             textAlign: "center",
