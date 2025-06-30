@@ -42,6 +42,7 @@ function Project() {
               textAlign: 'center',
               padding: '15px',
               flex: '1 1 300px',
+              marginBottom:"10px"
             }}
           >
             <h2>Sales Management System</h2>
@@ -63,6 +64,7 @@ function Project() {
               textAlign: 'center',
               padding: '15px',
               flex: '1 1 300px',
+              marginBottom:'10px'
             }}
           >
             <h2>Task Manager App</h2>
@@ -80,6 +82,7 @@ function Project() {
               textAlign: 'center',
               padding: '15px',
               flex: '1 1 300px',
+              marginBottom:"10px"
             }}
           >
             <h2>Online Quiz Application</h2>
@@ -97,6 +100,7 @@ function Project() {
               textAlign: 'center',
               padding: '15px',
               flex: '1 1 300px',
+              marginBottom:"10px"
             }}
           >
             <h2>E-Commerce</h2>
@@ -117,6 +121,7 @@ function Project() {
               textAlign: 'center',
               padding: '15px',
               flex: '1 1 300px',
+              marginBottom:"10px"
             }}
           >
             <h2>Personal Portfolio Website</h2>
