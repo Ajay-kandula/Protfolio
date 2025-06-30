@@ -71,7 +71,7 @@ function Contact() {
 
                 <section id="contact"  style={{
     display: "flex",
-    flexDirection: isMobile? "column" :'row',
+    flexDirection: isMobiLE? "column" :'row',
     justifyContent: 'space-around',
     flexWrap: 'wrap',
     gap: '20px',

@@ -12,7 +12,7 @@ function Drives() {
             fontSize: "50px",
             fontFamily: "sans-serif",
             marginBottom: "30px",
-            color:"white"
+            color:"white",
           }}
         >
           What Drives Me!
