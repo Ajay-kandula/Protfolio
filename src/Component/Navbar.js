@@ -13,7 +13,7 @@ function Navbar() {
         backgroundColor: '#002e63',
         color: 'white',
         maxWidth: "100%",
-        boxSizing: "border-box"
+        
       }}
     >
       
@@ -38,7 +38,6 @@ function Navbar() {
   fontSize: '16px',
   color: '#002e63',
   cursor: 'pointer',
-  boxSizing: "border-box"
 }}>About</button>
           </a>
           <a href="#project" style={{ width: "100%", maxWidth: "300px" }}>
@@ -52,7 +51,7 @@ function Navbar() {
   fontSize: '16px',
   color: '#002e63',
   cursor: 'pointer',
-  boxSizing: "border-box"
+
 }}>Projects</button>
           </a>
           <a href="#opentoopportunities" style={{ width: "100%", maxWidth: "300px" }}>
@@ -66,7 +65,7 @@ function Navbar() {
   fontSize: '16px',
   color: '#002e63',
   cursor: 'pointer',
-  boxSizing: "border-box"
+  
 }}>Open to Opportunities</button>
           </a>
           <a href="#education" style={{ width: "100%", maxWidth: "300px" }}>
@@ -80,7 +79,7 @@ function Navbar() {
   fontSize: '16px',
   color: '#002e63',
   cursor: 'pointer',
-  boxSizing: "border-box"
+ 
 }}>Education</button>
           </a>
           <a href="#experience" style={{ width: "100%", maxWidth: "300px" }}>
@@ -94,7 +93,7 @@ function Navbar() {
   fontSize: '16px',
   color: '#002e63',
   cursor: 'pointer',
-  boxSizing: "border-box"
+  
 }}>Experience</button>
           </a>
         </div>
