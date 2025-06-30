@@ -1,6 +1,6 @@
 import React from "react";
 function Nabvar(){
-    const AjayImage='./images/Ajayk.jpg'
+    const AjayImage='https://i.ibb.co/5WL7jPSJ/AJayk.jpgs'
     return(
         <div style={{justifyContent:'space-between',marginRight:'5px',fontSize:"30px", border:'1px solid#ccc', borderRadius:"10px",padding:'10px',backgroundColor:'#002e63'}}>
             <nav>   
