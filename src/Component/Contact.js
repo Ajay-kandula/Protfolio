@@ -11,6 +11,7 @@ function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
     if (!form.name) return alert('Please enter your name');
     if (!form.email) return alert('Please enter your email');
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) return alert('Please enter a valid email');
