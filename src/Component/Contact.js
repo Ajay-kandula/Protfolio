@@ -18,7 +18,7 @@ function Contact() {
     if (!form.message) return alert('Please type your message');
 
     try {
-      const res = await fetch("https://my-backend-api-3-crp2.onrender.com", {
+      const res = await fetch("https://my-backend-api-3-crp2.onrender.com/send", {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form)
