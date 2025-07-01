@@ -54,7 +54,7 @@ function Navbar() {
 
 }}>Projects</button>
           </a>
-          <a href="#opentoopportunities" style={{ width: "100%", maxWidth: "300px" }}>
+          <a href="#drives" style={{ width: "100%", maxWidth: "300px" }}>
             <button style={{
   width: "100%",
   padding: '12px',
@@ -66,7 +66,7 @@ function Navbar() {
   color: '#002e63',
   cursor: 'pointer',
   
-}}>Open to Opportunities</button>
+}}> What Drives Me</button>
           </a>
           <a href="#education" style={{ width: "100%", maxWidth: "300px" }}>
             <button style={{
