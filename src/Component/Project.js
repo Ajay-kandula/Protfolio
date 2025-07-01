@@ -81,7 +81,7 @@ function Project() {
               backgroundColor: "#014f86",
               textAlign: 'center',
               padding: '15px',
-              flex: '1 1 300px',
+             
               marginBottom:"10px"
             }}
           >
@@ -97,9 +97,9 @@ function Project() {
               borderRadius: "10px",
               color: 'white',
               backgroundColor: "#014f86",
-              textAlign: 'center',
+              textAlign: 'center',  
               padding: '15px',
-              flex: '1 1 300px',
+
               marginBottom:"10px"
             }}
           >
@@ -120,7 +120,7 @@ function Project() {
               backgroundColor: "#014f86",
               textAlign: 'center',
               padding: '15px',
-              flex: '1 1 300px',
+            
               marginBottom:"10px"
             }}
           >
