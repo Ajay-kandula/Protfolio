@@ -6,13 +6,7 @@ const Message = require('./Model/message');
 
 const app = express();
 
-app.use(cors({
-  origin:"*",
-  methods:['Get','Post'],
-  allowedHeaders:['content-Type']
-
-
-}));
+app.use(cors());
 app.use(express.json());
 
 
@@ -27,7 +21,7 @@ app.post('/send', async (req, res) => {
 });
 
 sequelize.sync().then(() => {
-  app.listen(5000,'0.0.0', () => {
-    console.log('Backend running on http://192.168.29.157:5000');
+  app.listen(5000, () => {
+    console.log('Backend running on http://localhost:5000');
   });
 });
