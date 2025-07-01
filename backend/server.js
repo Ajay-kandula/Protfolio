@@ -22,6 +22,6 @@ app.post('/send', async (req, res) => {
 
 sequelize.sync().then(() => {
   app.listen(5000, () => {
-    console.log('Backend running on http://localhost:5000');
+    console.log('Backend running on https://my-backend-api-3-crp2.onrender.com');
   });
 });
