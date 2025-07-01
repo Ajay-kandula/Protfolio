@@ -78,12 +78,12 @@ function Contact() {
             backgroundColor: "white",
             fontSize: '16px'
           }}>
-            <p>✉  <a href="mailto:ajaykandula0222@gmail.com" style={linkStyle}><strong>ajaykandula0222@gmail.com</strong></a></p>
-            <p>📞 <a href="tel:9848096642" style={linkStyle}>9848096642</a></p>
+            <p>✉  <a href="mailto:ajaykandula0222@gmail.com" style={{textDecoration:"none",color:"black"}}><strong>ajaykandula0222@gmail.com</strong></a></p>
+            <p>📞 <a href="tel:9848096642" style={{textDecoration:"none", color:"black"}}>9848096642</a></p>
             <p>🏠 <strong>Nandigama, Andhra Pradesh</strong></p>
             <p>📅 <strong>26/11/2001</strong></p>
-            <p><img src={linkdin} alt="LinkedIn" width={20} style={{ marginRight: "8px" }} /> <a href="https://www.linkedin.com/in/kandula-ajay-0504ba248/" target="_blank" rel="noreferrer" style={linkStyle}>LinkedIn</a></p>
-            <p><img src={insta} alt="Instagram" width={20} style={{ marginRight: "8px" }} /> <a href="https://www.instagram.com/ajay._.kandula/profilecard/?igsh=cjlmajQ2ZnprNDBi" target="_blank" rel="noreferrer" style={linkStyle}>Instagram</a></p>
+            <p><img src={linkdin} alt="LinkedIn" width={20} style={{ marginRight: "8px" }} /> <a href="https://www.linkedin.com/in/kandula-ajay-0504ba248/" target="_blank" rel="noreferrer" style={{textDecoration:"none", color:"black"}}>LinkedIn</a></p>
+            <p><img src={insta} alt="Instagram" width={20} style={{ marginRight: "8px" }} /> <a href="https://www.instagram.com/ajay._.kandula/profilecard/?igsh=cjlmajQ2ZnprNDBi" target="_blank" rel="noreferrer" style={{textDecoration:"none",color:'black'}}>Instagram</a></p>
           </div>
 
           
@@ -103,7 +103,11 @@ function Contact() {
                 value={form.name}
                 onChange={handleChange}
                 placeholder="Enter your name..."
-                style={inputStyle}
+                style={{width: '100%',
+  marginBottom: '10px',
+  padding: '8px',
+  borderRadius: '5px',
+  border: '1px solid #aaa'}}
               /><br />
 
               <label>Email:</label><br />
@@ -113,7 +117,11 @@ function Contact() {
                 value={form.email}
                 onChange={handleChange}
                 placeholder="Enter your email..."
-                style={inputStyle}
+                style={{width: '100%',
+  marginBottom: '10px',
+  padding: '8px',
+  borderRadius: '5px',
+  border: '1px solid #aaa'}}
               /><br />
 
               <label>Message:</label><br />
@@ -123,10 +131,20 @@ function Contact() {
                 onChange={handleChange}
                 placeholder="Enter your message..."
                 rows={4}
-                style={textareaStyle}
+                style={{ width: '100%',
+  marginBottom: '15px',
+  padding: '8px',
+  borderRadius: '5px',
+  border: '1px solid #aaa'}}
               ></textarea><br />
 
-              <button type="submit" style={buttonStyle}>
+              <button type="submit" style={{color: "white",
+  backgroundColor: '#e30022',
+  fontWeight: "bold",
+  border: 'none',
+  borderRadius: "8px",
+  width: '100%',
+  padding: "10px"}}>
                 Submit
               </button>
             </form>
@@ -134,42 +152,12 @@ function Contact() {
         </section>
       </div>
 
-      <p style={{ color: "black", textAlign: 'center', marginTop: '20px' }}>
+      <p style={{ color: "white", textAlign: 'center', marginTop: '20px' }}>
         2025 Ajay Kandula. All rights reserved.
       </p>
     </div>
   );
 }
 
-const inputStyle = {
-  width: '100%',
-  marginBottom: '10px',
-  padding: '8px',
-  borderRadius: '5px',
-  border: '1px solid #aaa'
-};
-
-const textareaStyle = {
-  width: '100%',
-  marginBottom: '15px',
-  padding: '8px',
-  borderRadius: '5px',
-  border: '1px solid #aaa'
-};
-
-const buttonStyle = {
-  color: "white",
-  backgroundColor: '#e30022',
-  fontWeight: "bold",
-  border: 'none',
-  borderRadius: "8px",
-  width: '100%',
-  padding: "10px"
-};
-
-const linkStyle = {
-  textDecoration: "none",
-  color: "black"
-};
 
 export default Contact;

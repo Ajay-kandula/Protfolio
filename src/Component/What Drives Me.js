@@ -35,7 +35,14 @@ function Drives() {
           justifyContent: "center",
           gap: "20px"
         }}>
-          <div style={cardStyle}>
+          <div style={{flex: "1 1 250px",
+  minWidth: "250px",
+  maxWidth: "350px",
+  border: "1px solid #ccc",
+  borderRadius: "10px",
+  padding: "20px",
+  backgroundColor: "#014f86", 
+  color: "white"}}>
             <h2 style={{ textAlign: "center", color: 'white' }}>Skills</h2>
             <ul>
               <li>JavaScript, TypeScript, React.js, Node.js, CSS, HTML</li>
@@ -45,7 +52,14 @@ function Drives() {
             </ul>
           </div>
 
-          <div style={cardStyle}>
+          <div style={{flex: "1 1 250px",
+  minWidth: "250px",
+  maxWidth: "350px",
+  border: "1px solid #ccc",
+  borderRadius: "10px",
+  padding: "20px",
+  backgroundColor: "#014f86", 
+  color: "white"}}>
             <h2 style={{ textAlign: "center", color: 'white' }}>Achievements</h2>
             <ul>
               <li>Secured AIR 24 in IMO</li>
@@ -55,7 +69,14 @@ function Drives() {
             </ul>
           </div>
 
-          <div style={cardStyle}>
+          <div style={{flex: "1 1 250px",
+  minWidth: "250px",
+  maxWidth: "350px",
+  border: "1px solid #ccc",
+  borderRadius: "10px",
+  padding: "20px",
+  backgroundColor: "#014f86", 
+  color: "white"}}>
             <h2 style={{ textAlign: 'center', color: 'white' }}>Interests</h2>
             <ul>
               <li>Reading and Blogging</li>
@@ -72,15 +93,5 @@ function Drives() {
   );
 }
 
-const cardStyle = {
-  flex: "1 1 250px",
-  minWidth: "250px",
-  maxWidth: "350px",
-  border: "1px solid #ccc",
-  borderRadius: "10px",
-  padding: "20px",
-  backgroundColor: "#014f86", 
-  color: "white"
-};
 
 export default Drives;
