@@ -31,7 +31,7 @@ function Contact() {
         alert(`✅ Thank you, ${form.name}! Your message has been saved.`);
         setForm({ name: '', email: '', message: '' });
       } 
-      else if(loading){
+      else if(setLoading(true)){
         alert(`Loading....`)
 
       }
