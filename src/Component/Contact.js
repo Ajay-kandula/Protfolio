@@ -4,6 +4,7 @@ function Contact() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const insta = './images/insta.png';
   const linkdin = './images/linkd.png';
+  const[loading,setLoading]=useState(false)
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -18,6 +19,7 @@ function Contact() {
     if (!form.message) return alert('Please type your message');
 
     try {
+      setLoading(true)
       const res = await fetch("https://my-backend-api-3-crp2.onrender.com/send", {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -139,14 +141,15 @@ function Contact() {
   border: '1px solid #aaa'}}
               ></textarea><br />
 
-              <button type="submit" style={{color: "white",
+              <button type="submit" disabled={setLoading} style={{color: "white",
   backgroundColor: '#e30022',
   fontWeight: "bold",
   border: 'none',
   borderRadius: "8px",
   width: '100%',
-  padding: "10px"}}>
-                Submit
+  padding: "10px",
+  cursor:setLoading?'not-allowed':"pointer"}}>{setLoading ?'submitting...':'submit'}
+                
               </button>
             </form>
           </div>
