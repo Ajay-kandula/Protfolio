@@ -31,10 +31,6 @@ function Contact() {
         alert(`✅ Thank you, ${form.name}! Your message has been saved.`);
         setForm({ name: '', email: '', message: '' });
       } 
-      else if(setLoading(true)){
-        alert(`Loading....`)
-
-      }
       
       else  {
         alert('Error: ' + data.error);
@@ -42,6 +38,8 @@ function Contact() {
     } catch (err) {
       alert("Network or server error. Please try again.");
       console.error(err);
+    }finally{
+      setLoading(false)
     }
   };
 
@@ -147,7 +145,7 @@ function Contact() {
   border: '1px solid #aaa'}}
               ></textarea><br />
 
-              <button type="submit" disabled={setLoading} style={{color: "white",
+              <button type="submit" style={{color: "white",
   backgroundColor: '#e30022',
   fontWeight: "bold",
   border: 'none',
