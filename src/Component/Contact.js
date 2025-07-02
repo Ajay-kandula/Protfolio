@@ -30,7 +30,13 @@ function Contact() {
       if (data.success) {
         alert(`✅ Thank you, ${form.name}! Your message has been saved.`);
         setForm({ name: '', email: '', message: '' });
-      } else {
+      } 
+      else if(loading){
+        alert(`Loading....`)
+
+      }
+      
+      else  {
         alert('Error: ' + data.error);
       }
     } catch (err) {
@@ -147,8 +153,7 @@ function Contact() {
   border: 'none',
   borderRadius: "8px",
   width: '100%',
-  padding: "10px",
-  cursor:setLoading?'not-allowed':"pointer"}}>{setLoading ?'submitting...':'submit'}
+  padding: "10px"}}>Submit
                 
               </button>
             </form>
