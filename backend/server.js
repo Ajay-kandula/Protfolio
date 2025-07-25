@@ -1,11 +1,11 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-const message=require('./Model/message')
-const mongoose=require('./Config/db')
+const Message=require('./Model/message')
+const connectDB=require('./Config/db')
 
 const app = express();
-mongoose();
+connectDB();
 
 app.use(cors());
 app.use(express.json());

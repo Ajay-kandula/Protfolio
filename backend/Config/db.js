@@ -13,4 +13,4 @@ const connectDB=async()=>{
     }
 
 }
-module.exports=mongoose;
+module.exports=connectDB;
