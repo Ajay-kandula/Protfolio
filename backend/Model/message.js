@@ -2,15 +2,15 @@ const mongoose=require('mongoose');
 
 const Message=new mongoose.Schema({
     name:{
-        type:STRING,
+        type:String,
         allowNull:false,
     },
     email:{
-        type:STRING,
+        type:String,
         allowNull:false
     },
     message:{
-        type:STRING,
+        type:String,
         allowNull:false
 
     }
