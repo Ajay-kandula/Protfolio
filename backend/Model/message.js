@@ -1,15 +1,16 @@
-const mongoose=require('mongoose')
+const mongoose=require('mongoose');
+
 const Message=new mongoose.Schema({
     name:{
-        type:DataTypes.STRING,
+        type:STRING,
         allowNull:false,
     },
     email:{
-        type:DataTypes.STRING,
+        type:STRING,
         allowNull:false
     },
     message:{
-        type:DataTypes.STRING,
+        type:STRING,
         allowNull:false
 
     }
