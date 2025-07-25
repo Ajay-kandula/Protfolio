@@ -1,10 +1,11 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-const sequelize = require('./Config/db');
-const Message = require('./Model/message');
+const message=require('./Model/message')
+const mongoose=require('./Config/db')
 
 const app = express();
+mongoose();
 
 app.use(cors());
 app.use(express.json());
@@ -20,8 +21,8 @@ app.post('/send', async (req, res) => {
   }
 });
 
-sequelize.sync().then(() => {
+
   app.listen(5000, () => {
     console.log('Backend running on https://my-backend-api-3-crp2.onrender.com');
   });
-});
+

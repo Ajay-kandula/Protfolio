@@ -1,6 +1,5 @@
-const {DataTypes} =require('sequelize')
-const sequelize=require('../Config/db')
-const Message=sequelize.define('Message',{
+const mongoose=require('mongoose')
+const Message=new mongoose.Schema({
     name:{
         type:DataTypes.STRING,
         allowNull:false,
@@ -15,4 +14,4 @@ const Message=sequelize.define('Message',{
 
     }
 })
-module.exports=Message;
+module.exports=mongoose.model('message',Message)
