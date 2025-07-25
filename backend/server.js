@@ -7,7 +7,12 @@ const connectDB=require('./Config/db')
 const app = express();
 connectDB();
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://protfolio-ashen-one.vercel.app', 
+  methods: ['GET', 'POST'],
+  credentials: true
+}));
+
 app.use(express.json());
 
 
